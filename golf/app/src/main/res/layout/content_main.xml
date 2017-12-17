@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/registration_background"
+        android:padding="25dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="ACCESO CLIENTE"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/txt_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:text=""
+                android:textSize="12dp"
+                android:layout_below="@+id/titulo"
+                android:textColor="#8fff0000"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+                android:id="@+id/txt_usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/register_uname"
+                android:gravity="center"
+                android:hint="Nombre de usuario"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/txt_error"
+                 />
+
+            <EditText
+                android:id="@+id/txt_clave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_usuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_password"
+                android:gravity="center"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:typeface="monospace"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_clave"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/register_button"
+                android:text="Entrar"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/member_imview" />
+
+</RelativeLayout>

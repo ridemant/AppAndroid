@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <!--
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" >
+    </CheckBox>
+-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ico_auto" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.95"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/producto_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Nombre del estacionamiento"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:id="@+id/producto_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="---"></TextView>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnReservar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="RESERVAR" />
+
+    </LinearLayout>
+</LinearLayout>

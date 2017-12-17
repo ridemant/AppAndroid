@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NRO DE ESTACIONAMIENTO"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txt_estacionamiento"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"/>
+
+
+
+        <!--
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIEMPO DE INICIO"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"/>
+        <TimePicker
+            android:id="@+id/tiempo_desde"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HASTA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"/>
+
+        <TimePicker
+            android:id="@+id/tiempo_hasta"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        -->
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnReservar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="RESERVAR AHORA" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
